@@ -1,0 +1,14 @@
+{
+  "fruit": "mango",
+  "fruit_confidence": 0.3421507179737091,
+  "ripeness": {
+    "clip_ripe_prob": 0.501,
+    "hsv_ripe_prob": 0.455,
+    "fused_ripe_prob": 0.48,
+    "ripeness_score": 48.0,
+    "estimated_days_left": 1.6,
+    "ok": false,
+    "label": "unripe"
+  },
+  "diseases": []
+}

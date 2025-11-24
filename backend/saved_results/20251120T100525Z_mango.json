@@ -1,0 +1,35 @@
+{
+  "fruit": "mango",
+  "fruit_confidence": 0.3435598313808441,
+  "ripeness": {
+    "clip_ripe_prob": 0.508,
+    "hsv_ripe_prob": 0.329,
+    "fused_ripe_prob": 0.428,
+    "ripeness_score": 42.8,
+    "estimated_days_left": 1.7,
+    "ok": true,
+    "label": "unripe"
+  },
+  "diseases": [
+    {
+      "label": "papaya Anthracnose",
+      "confidence": 0.632,
+      "bbox": [
+        90,
+        58,
+        256,
+        245
+      ]
+    },
+    {
+      "label": "papaya Anthracnose",
+      "confidence": 0.572,
+      "bbox": [
+        312,
+        422,
+        541,
+        672
+      ]
+    }
+  ]
+}

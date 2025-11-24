@@ -1,0 +1,14 @@
+{
+  "fruit": "apple",
+  "fruit_confidence": 0.3473057448863983,
+  "ripeness": {
+    "clip_ripe_prob": 0.504,
+    "hsv_ripe_prob": 0.136,
+    "fused_ripe_prob": 0.412,
+    "ripeness_score": 41.2,
+    "estimated_days_left": 4.1,
+    "ok": false,
+    "label": "unripe"
+  },
+  "diseases": []
+}

@@ -1,0 +1,266 @@
+/* Button Styles */
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 2.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: inherit;
+  letter-spacing: 0.4px;
+}
+
+button.btn-primary {
+  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%) !important;
+  color: white !important;
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3) !important;
+  border: none !important;
+  width: 100%;
+  display: flex;
+}
+
+button.btn-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #6366f1 0%, #818cf8 100%) !important;
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4) !important;
+  transform: translateY(-2px);
+}
+
+button.btn-primary:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3) !important;
+}
+
+button.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%) !important;
+}
+
+button.btn-secondary {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1.5px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+button.btn-secondary:hover:not(:disabled) {
+  background: var(--bg-tertiary);
+  border-color: var(--primary);
+  color: var(--primary-light);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+}
+
+button.btn-small {
+  padding: 0.7rem 1.4rem;
+  font-size: 0.85rem;
+  border-radius: 6px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 0rem;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+.tab {
+  padding: 1.1rem 2rem;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.25s ease;
+  position: relative;
+  bottom: -2px;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  font-family: inherit;
+}
+
+.tab.active {
+  color: var(--primary-light);
+  border-bottom-color: var(--primary);
+  background: rgba(79, 70, 229, 0.08);
+}
+
+.tab:hover {
+  color: var(--text-primary);
+  background: rgba(79, 70, 229, 0.08);
+}
+
+/* Icon toggle (camera / upload) */
+.icon-toggle {
+  display: flex;
+  gap: 1rem; /* increased spacing between camera and folder icons */
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all 0.18s ease;
+  padding: 4px;
+}
+
+.icon-btn svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-btn:hover {
+  background: var(--bg-tertiary);
+  color: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+.icon-btn.active {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 6px 18px rgba(79,70,229,0.25);
+}
+
+/* File upload specific adjustments */
+.file-upload .btn-primary {
+  margin-top: 1.25rem;
+  padding: 1.25rem 2.4rem;
+  font-size: 1.05rem;
+  border-radius: 10px;
+  font-weight: 700;
+  width: auto; /* don't force full width; center via parent */
+  min-width: 320px; /* make button larger and consistent */
+  display: inline-flex;
+  justify-content: center;
+}
+
+.file-upload .analyze-row {
+  margin-top: 8px;
+}
+
+.file-upload > div[style] {
+  /* ensure the inner drag box stands out and not double-wrapped */
+  background: var(--bg-secondary) !important;
+  border-radius: 12px !important;
+}
+
+/* Input Styles */
+input[type="file"],
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+input[type="file"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.badge-success {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--success);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.badge-warning {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--warning);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.badge-danger {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--danger);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.badge-info {
+  background: rgba(79, 70, 229, 0.15);
+  color: var(--primary-light);
+  border: 1px solid rgba(79, 70, 229, 0.3);
+}
+
+/* Alert Box */
+.alert {
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  border-left: 4px solid;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.alert-success {
+  background: rgba(16, 185, 129, 0.12);
+  border-left-color: var(--success);
+  color: var(--success);
+}
+
+.alert-warning {
+  background: rgba(245, 158, 11, 0.12);
+  border-left-color: var(--warning);
+  color: var(--warning);
+}
+
+.alert-danger {
+  background: rgba(239, 68, 68, 0.12);
+  border-left-color: var(--danger);
+  color: var(--danger);
+}
+
+.alert-info {
+  background: rgba(79, 70, 229, 0.12);
+  border-left-color: var(--primary);
+  color: var(--primary-light);
+}
+
+/* Loading Spinner */
+.spinner {
+  border: 2px solid var(--border);
+  border-top: 2px solid var(--primary);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

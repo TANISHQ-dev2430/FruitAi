@@ -1,0 +1,45 @@
+{
+  "fruit": "banana",
+  "fruit_confidence": 0.33449167013168335,
+  "ripeness": {
+    "clip_ripe_prob": 0.501,
+    "hsv_ripe_prob": 0.2,
+    "fused_ripe_prob": 0.426,
+    "ripeness_score": 42.6,
+    "estimated_days_left": 4.0,
+    "ok": false,
+    "label": "unripe"
+  },
+  "diseases": [
+    {
+      "label": "Mango Anthracnose",
+      "confidence": 0.909,
+      "bbox": [
+        63,
+        48,
+        593,
+        448
+      ]
+    },
+    {
+      "label": "Mango Anthracnose",
+      "confidence": 0.531,
+      "bbox": [
+        104,
+        124,
+        616,
+        463
+      ]
+    },
+    {
+      "label": "Mango Anthracnose",
+      "confidence": 0.447,
+      "bbox": [
+        9,
+        7,
+        504,
+        442
+      ]
+    }
+  ]
+}

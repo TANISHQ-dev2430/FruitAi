@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pillow
+numpy
+opencv-python
+torch>=1.13.0
+torchvision
+tensorflow

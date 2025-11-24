@@ -1,0 +1,25 @@
+{
+  "fruit": "mango",
+  "fruit_confidence": 0.3394947946071625,
+  "ripeness": {
+    "clip_ripe_prob": 0.498,
+    "hsv_ripe_prob": 0.266,
+    "fused_ripe_prob": 0.393,
+    "ripeness_score": 39.3,
+    "estimated_days_left": 1.8,
+    "ok": true,
+    "label": "unripe"
+  },
+  "diseases": [
+    {
+      "label": "Mango Anthracnose",
+      "confidence": 0.5,
+      "bbox": [
+        293,
+        155,
+        711,
+        474
+      ]
+    }
+  ]
+}

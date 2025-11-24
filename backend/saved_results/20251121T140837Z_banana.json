@@ -1,0 +1,14 @@
+{
+  "fruit": "banana",
+  "fruit_confidence": 0.3489607572555542,
+  "ripeness": {
+    "clip_ripe_prob": 0.504,
+    "hsv_ripe_prob": 0.363,
+    "fused_ripe_prob": 0.469,
+    "ripeness_score": 46.9,
+    "estimated_days_left": 3.7,
+    "ok": false,
+    "label": "unripe"
+  },
+  "diseases": []
+}
