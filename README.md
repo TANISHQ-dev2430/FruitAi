@@ -1,4 +1,4 @@
-# FruitClassifier
+# FruitAi
 
 FruitClassifier is a research and demo repository that provides image-based fruit analysis: fruit type classification, ripeness estimation, and disease detection. The project is split into a Python FastAPI backend that serves model inference endpoints and a React/Vite frontend that provides an interactive UI with webcam support.
 
@@ -130,4 +130,5 @@ Contributing and next steps
 	- Provide model download or installation scripts to place model files in `backend/models/` automatically.
 
 If you'd like, I can add documentation pages for API contracts, example clients, or CI steps to validate model loading at startup.
+
 
